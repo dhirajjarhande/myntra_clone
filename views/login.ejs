@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../stylesheets/register.css">
+    <link rel="stylesheet" href="../stylesheets/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="w-full min-h-screen center max-h-full  flex flex-wrap">
+        <!-- navbar -->
+        <div class="navbar w-full flex flex-wrap shadow-md fixed top h-20 py-4 px-6 bg-white">
+            <div class="logo px-3">
+                <img class="w-16 cover"
+                    src="data:image/jpeg;base64,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"
+                    alt="logo" />
+            </div>
+            <!-- navbar links -->
+            <div class="nav-link py-2 mr-14 center px-3 font-semibold text-sm">
+                <ul class="flex gap-7 py-2 flex-wrap">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">KIDS</a></li>
+                    <li><a href="#">HOME&LIVING</a></li>
+                    <li><a href="#">BEAUTY</a></li>
+                    <li class="ml-10">
+                      
+                        <a href="/product/create">Sell Our<span class="text-red-500 mb-2">Product</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- navbar serch box -->
+
+
+            <!-- profile wishlist bag-->
+            <div class="flex ml-80  gap-8 px-2 flex-wrap">
+                <div class="py-4   font-semibold">
+                   
+                    <a class="" href="/user/read">Profile</a>
+                </div>
+                <div class="py-4    font-semibold">
+                   
+                    <a href="/user/logout">logout</a>
+                </div>
+                <div class="py-4  font-semibold">
+                   
+                    <a href="/user/register"> Register</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- register user from create -->
+        <div class="  flex flex-wrap mt-28 p-4 mx-96 rounded-md boxWidth bg-white">
+            <!-- user from -->
+
+            <div class="w-full flex  border-2 rounded-md border-pink-500 h-96 flex-wrap">
+                <h2 class="text-3xl font-awesome font-semibold  mx-6 text-red-500">
+                    <%=message%> 
+                    <%=user_alredy%>
+                </h2>
+                <div class=" flex flex-wrap h-48 inputPossition">
+                    <form action="/user/login" method="post">
+
+                        <input class="block border-2 rounded-md px-14 text-zinc-900 outline-none mx-10 w-72 mt-2 py-2 "
+                            type="email" placeholder="Email" name="email">
+
+                        <input class="block border-2 rounded-md px-14 text-zinc-900 outline-none mx-10 w-72 mt-2 py-2 "
+                            type="password" placeholder="password" name="password">
+                        <div class=" w-full flex flex-wrap  mt-4">
+                            <button type="submit " class="mx-16 px-20 bg-pink-500   border-2 rounded-md  py-2"> Login
+                                User</button>
+                        </div>
+
+                </div>
+                <!-- register button -->
+
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
