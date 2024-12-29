@@ -9,6 +9,7 @@ const productRoute = require("./routes/productRoute");
 const DB_connection = require("./config/db_connection");
 const expressSession = require("express-session");
 const flash =require("connect-flash");
+const PORT =process.env.PORT
 
 
 
@@ -37,4 +38,4 @@ app.use("/user",userRoute);
 //product route
 app.use("/product",productRoute);
 //app port on this listen
-app.listen(3000, () => console.log("sever is started"));
+app.listen(PORT, () => console.log("sever is started"));
